@@ -70,6 +70,7 @@ One of the advantages of zkBob during our development phase was the good structu
 
 Polygon mainnet : 
 ```
+0x39cb72ab613A386E8D37E8caCE8e048d0Dc54f86
 ```
 
 Sepolia testnet: 
