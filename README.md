@@ -53,7 +53,8 @@ The gola for our project was to add, thanks to **zkBob**, the possibility of car
 
 We relied on the [zkbob documentation](https://docs.zkbob.com/).
 
-**Direct deposits integration**
+**Direct deposits integration :**  
+
 In order to dev the direct deposit functionality, we had to implement the interface [IZkBobDirectDeposits.sol](https://github.com/zkBob/zkbob-contracts/blob/develop/src/interfaces/IZkBobDirectDeposits.sol) within our smart contract.
 
 Our smart contract interacts directly with the zkBobpool to transfer BOBs from one address to another.
