@@ -18,16 +18,17 @@ contract DirectDeposit {
     mapping (address => uint256) public deposits;
 
     // Polygon Mainnet
-    // IERC20 bob = IERC20(0xB0B195aEFA3650A6908f15CdaC7D92F8a5791B0B);
-    // IZkBobDirectDeposits queue = IZkBobDirectDeposits(0x668c5286eAD26fAC5fa944887F9D2F20f7DDF289);
+    IERC677 public bob = IERC677(0xB0B195aEFA3650A6908f15CdaC7D92F8a5791B0B); 
+    IERC20 bobi = IERC20(0xB0B195aEFA3650A6908f15CdaC7D92F8a5791B0B);
+    IZkBobDirectDeposits queue = IZkBobDirectDeposits(0x668c5286eAD26fAC5fa944887F9D2F20f7DDF289);
 
     // Sepolia testnet 
     // We use the IERC677 interface to call the transferAndCall function of the BOB token
     // and we use the IERC20 interface to call the transfer function of the BOB token
     // nb : BOB token has 18 decimals
-    IERC677 public bob = IERC677(0x2C74B18e2f84B78ac67428d0c7a9898515f0c46f); 
-    IERC20 public bobi = IERC20(0x2C74B18e2f84B78ac67428d0c7a9898515f0c46f); 
-    IZkBobDirectDeposits public queue = IZkBobDirectDeposits(0xE3Dd183ffa70BcFC442A0B9991E682cA8A442Ade);
+    // IERC677 public bob = IERC677(0x2C74B18e2f84B78ac67428d0c7a9898515f0c46f); 
+    // IERC20 public bobi = IERC20(0x2C74B18e2f84B78ac67428d0c7a9898515f0c46f); 
+    // IZkBobDirectDeposits public queue = IZkBobDirectDeposits(0xE3Dd183ffa70BcFC442A0B9991E682cA8A442Ade);
 
     //Some basic events to help us track the deposit and withdrawal of BOB tokens
     event Deposit(address indexed sender, uint256 amount);

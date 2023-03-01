@@ -42,7 +42,7 @@
  */
 
 require('dotenv').config();
-const { MNEMONIC, PROJECT_ID, ETHERSCAN } = process.env;
+const { MNEMONIC, PROJECT_ID, ETHERSCAN, POLYGONSCAN } = process.env;
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 
@@ -109,7 +109,8 @@ module.exports = {
         return new HDWalletProvider(MNEMONIC, "https://polygon-mainnet.infura.io/v3/" + PROJECT_ID)
       },
       network_id: 137,
-      networkCheckTimeout: 30000
+      networkCheckTimeout: 30000,
+      gasPrice: 500000000000,
     },
     //
     // Useful for private networks
@@ -143,7 +144,8 @@ module.exports = {
     'truffle-plugin-verify'
   ],
   api_keys: {
-    etherscan: ETHERSCAN
+    etherscan: ETHERSCAN,
+    polygonscan: POLYGONSCAN
   },
 
   // Truffle DB is currently disabled by default; to enable it, change enabled:
