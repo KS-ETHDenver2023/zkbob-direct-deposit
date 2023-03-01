@@ -57,6 +57,8 @@ We relied on the [zkbob documentation](https://docs.zkbob.com/).
 
 In order to dev the direct deposit functionality, we had to implement the interface [IZkBobDirectDeposits.sol](https://github.com/zkBob/zkbob-contracts/blob/develop/src/interfaces/IZkBobDirectDeposits.sol) within our smart contract.
 
+We use the ERC677 transferAndCall approach because it's more gas efficient.
+
 Our smart contract interacts directly with the zkBobpool to transfer BOBs from one address to another.
 To do this the user must allow+deposit BOBs on our "Alice's Ring Direct Deposit" smart contract. 
 Once done, he has the possibility from our web app to transfer BOBs.
