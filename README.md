@@ -72,6 +72,7 @@ Polygon mainnet :
 
 Sepolia testnet: 
 ```
+0x6a39041208918E974d967CA60CfBC239D9D50125
 ```
 
 ## Contribute ✨
