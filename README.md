@@ -48,7 +48,7 @@ Benefits 🛰️:
 
 ## Smart contract architecture 📏
 
-The gola for our project was to add, thanks to **zkBob**, the possibility of carrying out anonymous transactions, via a stablecoin, on an EVM chain.
+The goal for our project was to add, thanks to **zkBob**, the possibility of carrying out anonymous transactions, via a stablecoin, on an EVM chain.
 **zkBob** is currently deployed on the **Polygon** ecosystem, which we particularly appreciate thanks to its infrastructure and the quality of resources for developers and users.
 
 We relied on the [zkbob documentation](https://docs.zkbob.com/).
